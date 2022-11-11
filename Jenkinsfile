@@ -1,5 +1,7 @@
 pipeline{
-    agent any
+    agent {
+        label 'MacOS';
+    }
     stages{
         stage('Get Code from Git'){
             steps{
